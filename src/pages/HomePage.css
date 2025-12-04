@@ -154,4 +154,8 @@
   padding: 8px;
   height: 34px;
   margin-top: 1px;
+  background-color: rgb(50, 154, 50);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
