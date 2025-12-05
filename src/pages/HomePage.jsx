@@ -2,7 +2,7 @@ import axios from "axios";
 import { Header } from "../components/Header";
 import "./HomePage.css";
 import { useEffect, useState } from "react";
-export function HomePage() {
+export function HomePage({ cart }) {
   const [products, setPrtoducts] = useState([]);
 
   useEffect(() => {
