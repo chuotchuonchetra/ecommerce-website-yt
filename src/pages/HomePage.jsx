@@ -4,10 +4,9 @@ import "./HomePage.css";
 import { useEffect, useState } from "react";
 export function HomePage() {
   const [products, setPrtoducts] = useState([]);
-  // const [] = useState();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/products").then((response) => {
+    axios.get("/api/products").then((response) => {
       setPrtoducts(response.data);
     });
   }, []);
@@ -16,7 +15,7 @@ export function HomePage() {
     <>
       <title>Ecommerce Project</title>
 
-      <Header />
+      <Header cart={cart} />
 
       <div className="home-page">
         <div className="products-grid">
